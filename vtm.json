@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": { "value": "westeurope" },
+    "clusterName": { "value": "lcvtm" },
+    "instanceCountString": { "value": "2" },
+    "servicePortString": { "value": "443" },
+    "serviceProtocol": { "value": "tcp" },
+    "virtualNetworkName": { "value": "lcvtm" },
+    "virtualNetworkAddressPrefix": { "value": "10.1.0.0/16" },
+    "virtualNetworkNewOrExisting": { "value": "new" },
+    "virtualNetworkResourceGroup": { "value": "dummy" },
+    "subnetName": { "value": "vtm" },
+    "subnetAddressSpace": { "value": "10.1.0.0/24" },
+    "skuType": { "value": "stm_dev_byol" },
+    "version": { "value": "1.170300.0" },
+    "adminPassword": {"value": "Aa12345^"},
+    "sshPublicKey": { "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuwIZ9uuXaix64ePBMZz1wuhBHPlQuNJno0LKxGY7050gyUUvzolnuTuVnSp0IBsZ8GQ4bOsaeOPhZZDbyV4Lp0ieiwQDkWAX0NlO/yUAOY2/KuAfRv2Hv/BiV8hpoCj5zXlKbX2c2pCBXPpwr74UnIKQB7aNaFFnvaOShokgo6q1WXjbe/gjA9iQdulihuQV6PWBtuetZLRJLAH/2mWh29lf62ISzBmnoqUqWpqBmnB5zml/A7zqFWDbYsSteRGxlEHUfQX/04rgEyWZQfnYEEU3YVuTTzUaLuNhqcFeCly0j/B6JfdZQ2d6/QqOIOuQkG8ToCYAxuZDsEEwZRdfB apritchard@charon" },
+    "authenticationType": { "value": "both" },
+    "storageAccountPrefix": { "value": "lcvtm" },
+    "storageAccountType": { "value": "Standard_LRS" },
+    "vtmVmSize": { "value": "Standard_D2" },
+    "adminNatStartPortString": { "value": "10000" },
+    "sshNatStartPortString": { "value": "10100" },
+    "restNatStartPortString": { "value": "10200" },
+    "artifactsBaseUrl": { "value": "https://raw.githubusercontent.com/chamberslad/vtm/master" }
+  }
+}
